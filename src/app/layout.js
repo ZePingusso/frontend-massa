@@ -54,7 +54,7 @@ export default function RootLayout({ children }) {
 
           {/* O conteúdo específico de cada página (page.js) entrará aqui */}
           <div className="mt-12">
-            {children}
+            
           </div>
         </main>
       </body>
