@@ -1,8 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import TopBar from '@/components/ui/topbarmenu';
-import { Button } from '@/components/ui/button';
-import Feed from '@/components/ui/feed';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Meu Projeto",
-  description: "Layout com Menu e Botões fixos",
+  description: "Layout com Menu superior",
 };
 
 export default function RootLayout({ children }) {
@@ -31,32 +29,11 @@ export default function RootLayout({ children }) {
           bg-slate-50
         `}
       >
-        {/* O Menu Superior agora é fixo para todas as páginas */}
+        {/* Menu fixo */}
         <TopBar />
-        <Feed />
 
-        <main className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 w-full">
-          {/* Cabeçalho fixo no layout */}
-          <header>
-            <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight">
-              Esboço
-            </h1>
-            <p className="mt-4 text-lg text-gray-600">
-              Este cabeçalho e os botões agora fazem parte do Layout global.
-            </p>
-          </header>
-
-          {/* Botões fixos no layout */}
-          <div className="mt-8 flex gap-4">
-            <Button>Button 1</Button>
-            <Button variant="outline">Button 2</Button>
-          </div>
-
-          {/* O conteúdo específico de cada página (page.js) entrará aqui */}
-          <div className="mt-12">
-            
-          </div>
-        </main>
+        {/* Conteúdo das páginas */}
+        {children}
       </body>
     </html>
   );

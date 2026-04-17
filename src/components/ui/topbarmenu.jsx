@@ -17,7 +17,7 @@ const TopBar = () => {
 
           {/* Centro: Navegação (Desktop) */}
           <nav className="hidden md:flex space-x-10">
-            <a href="#" className="text-sm font-medium text-gray-700 hover:text-indigo-600 transition">Dashboard</a>
+            <Link href="/Home" className="text-sm font-medium text-gray-700 hover:text-indigo-600 transition">Dashboard</Link>
             <a href="#" className="text-sm font-medium text-gray-700 hover:text-indigo-600 transition">Projetos</a>
             <a href="#" className="text-sm font-medium text-gray-700 hover:text-indigo-600 transition">Equipe</a>
           </nav>
@@ -26,12 +26,12 @@ const TopBar = () => {
           <div className="flex items-center gap-4">
             <Link href="/login" className="cursor-pointer text-sm font-medium text-gray-700 hover:text-indigo-600 transition">
             <button className="text-sm font-medium text-gray-500 hover:text-gray-900">
-              Log in
+              Login
             </button>
             </Link>
             <Link href="/cadastro" className="cursor-pointer text-sm font-medium text-gray-700 hover:text-indigo-600 transition">
             <button className="rounded-full bg-gray-900 px-4 py-2 text-sm font-medium text-white hover:bg-gray-800 transition">
-              Get Started
+              Cadastro
             </button>
             </Link>
           </div>

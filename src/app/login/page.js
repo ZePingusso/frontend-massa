@@ -51,7 +51,7 @@ export default function Login() {
                   </Label>
                   <Link
                     href="#"
-                    className="text-xs font-medium text-indigo-600 hover:text-indigo-500 hover:underline"
+                  
                   >
                     Esqueceu a senha?
                   </Link>
@@ -64,9 +64,12 @@ export default function Login() {
                 />
               </div>
 
-              <Button type="submit" className="h-11 w-full bg-indigo-600 font-bold text-white hover:bg-indigo-700">
-                Entrar
-              </Button>
+              <Button 
+  type="submit" 
+  className="h-11 w-full bg-indigo-600 text-white font-bold hover:bg-indigo-700"
+>
+  Entrar
+</Button>
             </div>
           </form>
 
